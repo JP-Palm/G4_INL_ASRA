@@ -2,5 +2,5 @@
 **/__pycache__/
 /venv/
 /.vscode/
-test.py
+/tests/
 **/*.pyc
