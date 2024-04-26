@@ -1,0 +1,1 @@
+# Handles the logic to respond to requests and render templates.
