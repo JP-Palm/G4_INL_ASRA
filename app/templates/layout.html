@@ -8,21 +8,47 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-  <!-- Nav Bar items here -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-<!-- Main content will be inserted here -->
-{% block content %}
-{% endblock %}
+  <title>ASRA - Animal Recognition Assistant</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">ASRA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link active" href="#">Features</a>
+        <a class="nav-item nav-link" href="#">FAQ</a>
+        <a class="nav-item nav-link btn btn-primary text-white" href="#">Get Started</a>
+      </div>
+    </div>
+  </nav>
 
-<!-- Footer -->
-<footer>
-  <div class="container text-center">
-    <small>ASRA</small>
-  </div>
-</footer>
+  <header class="main-header d-flex align-items-center justify-content-center" style="height: 100vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ url_for('static', filename='images/background.jpg') }}') no-repeat center center;">
+    <div class="text-center text-white">
+      <h1>Your New AI Assistant</h1>
+      <p>Identify and Learn About Animals Instantly with Our AI-Powered Tool</p>
+      <a href="#" class="btn btn-primary">Get Started</a>
+    </div>
+  </header>
 
-<!-- jQuery and Bootstrap Bundle (includes Popper) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <!-- Main content will be inserted here -->
+  {% block content %}
+  {% endblock %}
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <small>ASRA &copy; 2024</small>
+    </div>
+  </footer>
+
+  <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
