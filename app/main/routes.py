@@ -21,7 +21,7 @@ def index():
         prediction, confidence = get_prediction(img_bytes)
         encoded_img_bytes = base64.b64encode(img_bytes).decode('utf-8')
         
-        # We should do this sometime, but with proper handling of making folder if we don't have one for feedback_data
+        # TODO We should do this sometime, but with proper handling of making folder if we don't have one for feedback_data
         unique_filename = str(uuid.uuid4()) + ".jpg"
         # class_folder = os.path.join('C:/python/maskin inlärning/first_cnn_with_chatgpt_4o/feedback_data', prediction)
         # save_image(img_bytes, class_folder, unique_filename)
