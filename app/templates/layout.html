@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Box icons CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -21,25 +24,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link active" href="#">Features</a>
-        <a class="nav-item nav-link" href="#">FAQ</a>
-        <a class="nav-item nav-link btn btn-primary text-white" href="#">Get Started</a>
+        <a class="nav-item nav-link active" href="#features">Features</a>
+        <a class="nav-item nav-link" href="#faq">FAQ</a>
+        <a class="nav-item nav-link btn btn-primary text-white" href="#start">Get Started</a>
       </div>
     </div>
   </nav>
-
-  <header class="main-header d-flex align-items-center justify-content-center" style="height: 100vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ url_for('static', filename='images/background.jpg') }}') no-repeat center center;">
-    <div class="text-center text-white">
-      <h1>Your New AI Assistant</h1>
-      <p>Identify and Learn About Animals Instantly with Our AI-Powered Tool</p>
-      <a href="#" class="btn btn-primary">Get Started</a>
-    </div>
-  </header>
-
-  <!-- Main content will be inserted here -->
-  {% block content %}
-  {% endblock %}
-
+  <div>
+    <!-- Main content will be inserted here -->
+    {% block content %}
+    {% endblock %}
+  </div>
   <!-- Footer -->
   <footer class="bg-dark text-white py-4">
     <div class="container text-center">

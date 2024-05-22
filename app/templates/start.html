@@ -1,0 +1,36 @@
+<div class="d-flex flex-column p-5 align-items-center " style="height: 90vh;">
+    <div class="py-5 w-100 " id="start">
+        <form action="{{ url_for('main.index') }}" method="POST" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <div class="container">
+                <div class="row justify-content-center ">
+                    <div class="col-4 text-center ">
+                        <label for="photo">
+                            <i class='bx bx-upload icon-upload'></i>Upload your image
+                            {{ form.photo(id='photo', style="display: None;") }}
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const uploadIcon = document.querySelector('.icon-upload');
+        const fileInput = document.getElementById('photo');
+
+        uploadIcon.addEventListener('click', function() {
+            fileInput.click();
+        });
+
+        fileInput.addEventListener('change', function() {
+            // If you want to preview the file name
+            console.log(fileInput.files[0].name);
+
+            // Automatically submit the form
+            fileInput.form.submit();
+        });
+    });
+</script>
