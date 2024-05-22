@@ -58,3 +58,17 @@ img {
 .icon-upload:hover {
     color:#007BFF;
 }
+
+#features {
+    height: 750px;
+    background: url("alt_background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 90px;
+}
+
+#faq {
+    height: 750px;
+}
