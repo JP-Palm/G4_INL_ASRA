@@ -11,3 +11,50 @@
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
+
+.img-div {
+    width: 20vw;
+    height: 80vw;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+.file-input-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.file-input-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.custom-file-label {
+    color:royalblue;
+    cursor: pointer;
+}
+
+.custom-file-label:hover {
+    color:darkblue;
+}
+
+.icon-upload {
+    font-size: 200px;
+    cursor: pointer;
+}
+
+.icon-upload:hover {
+    color:#007BFF;
+}

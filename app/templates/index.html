@@ -1,4 +1,18 @@
 {% extends "layout.html" %}
 
 {% block content %}
+<header class="main-header d-flex align-items-center justify-content-center" style="height: 95vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ url_for('static', filename='images/background.jpg') }}') no-repeat center center;">
+    <div class="text-center text-white">
+      <h1>Your New AI Assistant</h1>
+      <p>Identify and Learn About Animals Instantly with Our AI-Powered Tool</p>
+      <a href="#start" class="btn btn-primary">Get Started</a>
+    </div>
+</header>
+
+{% include "start.html" %}
+
+{% include "features.html" %}
+
+{% include "faq.html" %}
+
 {% endblock %}
