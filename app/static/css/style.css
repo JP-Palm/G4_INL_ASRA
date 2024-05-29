@@ -81,7 +81,7 @@ img {
 
 .f_wrapper {
     height: 55%;
-    margin-top: 250px;
+    margin-top: 150px;
     background: url("purr.jpg");
     background-size: cover;
     background-position: center;
@@ -130,7 +130,7 @@ img {
     font-family: "Noto Serif", serif;
     font-style: italic;
     background-color:#343a40;
-    margin-top: 100px;
+    margin-top: 30px;
     padding: 25px;
 
 }
