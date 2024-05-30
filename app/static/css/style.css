@@ -104,7 +104,7 @@ img {
     display: block;
     float: right;
     margin-right: 100px;
-    color: rgb(215, 252, 0);
+    color: rgb(255, 215, 0);
     font-size: 850%;
     margin-top: 150px;
     font-family: "Noto Serif", serif;
@@ -126,7 +126,7 @@ img {
 .faq_header{
     font-size: 500%;
     text-align: center;
-    color: rgb(215, 252, 0);
+    color: rgb(255, 215, 0);
     font-family: "Noto Serif", serif;
     font-style: italic;
     background-color:#343a40;
@@ -136,7 +136,7 @@ img {
 
 .q_header {
     text-align: center;
-    color: rgb(215, 252, 0);
+    color: rgb(255, 215, 0);
     font-size: 275%;
     text-decoration: underline;
 }
