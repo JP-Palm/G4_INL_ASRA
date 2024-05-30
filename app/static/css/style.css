@@ -114,12 +114,12 @@ img {
 .faq_wrapper{
     height: 55%;
     margin-top: 75px;
-    background: url("dogtre.jpg");
+    background: url("dognie.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
-    padding: 75px;
+    padding: 65px;
     
 }
 
