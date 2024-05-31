@@ -2,6 +2,11 @@
     background-size: cover;
     background-position: center;
     color: white;
+    height: 85vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("background.jpg") no-repeat center center;
+    background-position: center center;
+    background-repeat: no-repeat;
+
 }
 .main-header h1 {
     font-size: 3rem;
@@ -58,3 +63,85 @@ img {
 .icon-upload:hover {
     color:#007BFF;
 }
+
+#features {
+    height: 1300px;
+}
+
+#faq {
+    height: 1300px;
+}
+
+.f_wrapper {
+    height: 55%;
+    margin-top: 225px;
+    background: url("purr.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.feature_list {
+    color: rgb(5 250 227);
+    font-size: 300%;
+    display: block;
+    float: left;
+    margin-left: 150px;
+    margin-top: 250px;
+    list-style: none;
+}
+
+.k_header {
+    display: block;
+    float: right;
+    margin-right: 100px;
+    color: rgb(255, 215, 0);
+    font-size: 850%;
+    margin-top: 150px;
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+}
+
+.faq_wrapper{
+    height: 55%;
+    margin-top: 75px;
+    background: url("dognie.png");
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 50px;
+    
+}
+
+.faq_header{
+    font-size: 500%;
+    text-align: center;
+    color: rgb(255, 215, 0);
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    background-color:#343a40;
+    margin-top: 175px;
+    padding: 25px;
+}
+
+.q_header {
+    text-align: center;
+    color: rgb(255, 215, 0);
+    font-size: 275%;
+    text-decoration: underline;
+}
+
+.a_header {
+    text-align: center;
+    color: rgb(5 250 227);
+    font-size: 200%;
+
+}
+
+.faq_header img {
+    height: 100px;
+}
+
