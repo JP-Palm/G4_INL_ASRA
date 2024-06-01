@@ -81,7 +81,7 @@ img {
 
 .f_wrapper {
     height: 55%;
-    margin-top: 250px;
+    margin-top: 225px;
     background: url("purr.jpg");
     background-size: cover;
     background-position: center;
@@ -91,7 +91,7 @@ img {
 
 
 .feature_list {
-    color: rgb(146, 191, 253);
+    color: rgb(5 250 227);
     font-size: 300%;
     display: block;
     float: left;
@@ -120,7 +120,7 @@ img {
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     padding: 65px;
-    
+
 }
 
 .faq_header{
@@ -131,6 +131,7 @@ img {
     font-style: italic;
     background-color:#343a40;
     margin-top: 150px;
+
     padding: 25px;
 }
 
@@ -143,10 +144,12 @@ img {
 
 .a_header {
     text-align: center;
-    color: rgb(146, 191, 253);
+    color: rgb(5 250 227);
     font-size: 200%;
+
 }
 
 .faq_header img {
     height: 100px;
 }
+
