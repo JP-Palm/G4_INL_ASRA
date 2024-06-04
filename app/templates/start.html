@@ -1,9 +1,9 @@
 <div class="d-flex flex-column p-5 align-items-center " style="height: 90vh;">
     <div class="py-5 w-100 " id="start">
-        <form action="{{ url_for('main.index') }}" method="POST" enctype="multipart/form-data">
+        <form id="uploadForm" enctype="multipart/form-data">
             {{ form.hidden_tag() }}
             <div class="container">
-                <div class="row justify-content-center ">
+                <div class="row justify-content-center " style="color: rgb(255, 215, 0);">
                     <h1>Choose image to classify</h1>
                 </div>
                 <div class="row justify-content-center mt-3">
@@ -16,6 +16,8 @@
                 </div>
             </div>
         </form>
+
+        <div id="result" style="color: rgb(255, 215, 0);"></div>
     </div>
 </div>
 
@@ -23,17 +25,29 @@
     document.addEventListener('DOMContentLoaded', function() {
         const uploadIcon = document.querySelector('.icon-upload');
         const fileInput = document.getElementById('photo');
+        const form = document.getElementById('uploadForm');
 
         uploadIcon.addEventListener('click', function() {
             fileInput.click();
         });
 
-        fileInput.addEventListener('change', function() {
-            // If you want to preview the file name
-            console.log(fileInput.files[0].name);
-
+        fileInput.addEventListener('change', async function(event) {
             // Automatically submit the form
-            fileInput.form.submit();
+            // fileInput.form.submit();
+            const formData = new FormData(form);
+
+            const response = await fetch("{{ url_for('api.classify_api') }}", {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                document.getElementById('result').innerText = `Prediction: ${result.prediction}, Confidence: ${result.confidence}`;
+            } else {
+                const error = await response.json();
+                document.getElementById('result').innerText = `Error: ${error.error}`;
+            }
         });
     });
 </script>
