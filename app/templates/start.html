@@ -1,5 +1,5 @@
-<div class="d-flex flex-column p-5 align-items-center " style="height: 90vh;">
-    <div class="py-5 w-100 " id="start">
+<div id="start" class="d-flex flex-column p-5 align-items-center " style="height: 90vh;">
+    <div class="py-5 w-100">
         <form id="uploadForm" enctype="multipart/form-data">
             {{ form.hidden_tag() }}
             <div class="container">
@@ -17,11 +17,11 @@
             </div>
         </form>
 
-        <div class="container pt-5">
+        <div class="container pt-3">
             <div class="row justify-content-center">
                 <img id="uploadedImage" style="max-width: 400px; height: auto;" >
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center pt-1">
                 <div id="classificationResult" style="color: rgb(255, 215, 0); font-size: large;"></div>
             </div>
         </div>
