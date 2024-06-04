@@ -10,7 +10,7 @@
                     <div class="col-4 text-center ">
                         <label for="photo">
                             <i class='bx bx-upload icon-upload'></i>
-                            {{ form.photo(id='photo', style="display: None;") }}
+                            {{ form.photo(id='photo', style="display: none;") }}
                         </label>
                     </div>
                 </div>
@@ -41,8 +41,6 @@
         });
 
         fileInput.addEventListener('change', async function(event) {
-            // Automatically submit the form
-            // fileInput.form.submit();
             const file = fileInput.files[0];
             if (file) {
                 const reader = new FileReader();
@@ -65,7 +63,7 @@
                     const error = await response.json();
                     classificationResult.innerText = `Error: ${error.error}`;
                 }
-            };
+            }
         });
     });
 </script>
