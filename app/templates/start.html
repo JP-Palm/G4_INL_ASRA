@@ -17,7 +17,14 @@
             </div>
         </form>
 
-        <div id="result" style="color: rgb(255, 215, 0);"></div>
+        <div class="container pt-5">
+            <div class="row justify-content-center">
+                <img id="uploadedImage" style="max-width: 400px; height: auto;" >
+            </div>
+            <div class="row justify-content-center">
+                <div id="classificationResult" style="color: rgb(255, 215, 0); font-size: large;"></div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -26,6 +33,8 @@
         const uploadIcon = document.querySelector('.icon-upload');
         const fileInput = document.getElementById('photo');
         const form = document.getElementById('uploadForm');
+        const classificationResult = document.getElementById('classificationResult');
+        const uploadedImage = document.getElementById('uploadedImage');
 
         uploadIcon.addEventListener('click', function() {
             fileInput.click();
@@ -34,20 +43,29 @@
         fileInput.addEventListener('change', async function(event) {
             // Automatically submit the form
             // fileInput.form.submit();
-            const formData = new FormData(form);
+            const file = fileInput.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    uploadedImage.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
 
-            const response = await fetch("{{ url_for('api.classify_api') }}", {
-                method: 'POST',
-                body: formData
-            });
+                const formData = new FormData(form);
 
-            if (response.ok) {
-                const result = await response.json();
-                document.getElementById('result').innerText = `Prediction: ${result.prediction}, Confidence: ${result.confidence}`;
-            } else {
-                const error = await response.json();
-                document.getElementById('result').innerText = `Error: ${error.error}`;
-            }
+                const response = await fetch("{{ url_for('api.classify_api') }}", {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    classificationResult.innerText = `Prediction: ${result.prediction}, Confidence: ${result.confidence}`;
+                } else {
+                    const error = await response.json();
+                    classificationResult.innerText = `Error: ${error.error}`;
+                }
+            };
         });
     });
 </script>

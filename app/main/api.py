@@ -14,4 +14,9 @@ def classify_api():
     img_bytes = file.read()
     prediction, confidence = get_prediction(img_bytes)
     
-    return jsonify({'prediction': prediction, 'confidence': confidence})
+    return jsonify(
+        {
+            'prediction': prediction,
+            'confidence': confidence
+        }
+    )
