@@ -11,7 +11,7 @@ model.fc = torch.nn.Linear(num_ftrs, 3)  # Tre klasser: cat, dog, unknown
 
 # Load the state dictionary from the file
 model_path = 'cat_dog_unknown_best_model.pth'
-# model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
+model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
 model.eval()
 
 # Define the transforms
