@@ -72,9 +72,8 @@ img {
 }
     
 #features {
-    height: 2500px;
-    padding-top: 300px;
-
+    height: 3100px;
+    padding-top: 325px;
 }
 
 #faq {
@@ -83,7 +82,7 @@ img {
 
 .f_wrapper {
     /* margin-top: 400px; */
-    height: 25%;
+    height: 20%;
     background: url("purr.jpg");
     background-size: cover;
     background-position: center;
