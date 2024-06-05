@@ -7,6 +7,24 @@
         margin-left: 20px;
     }
 
+    .faq_header{
+        font-size: 400%;
+    }
+
+    .faq_header img {
+        height: 75px;
+    }
+
+    .faq_wrapper{
+        padding-top: 100px;
+    }
+    .q_header {
+        font-size: 250%;
+    }
+    
+    .a_header {
+        font-size: 175%;
+    }
 
   }
 
@@ -24,6 +42,27 @@
 
       .f_wrapper {
         height: 30%;
+    }
+
+    .faq_header{
+        font-size: 300%;
+    }
+
+    .faq_header img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .faq_wrapper{
+        padding-top: 50px;
+        height: 40%;
+    }
+    .q_header {
+        font-size: 200%;
+    }
+    
+    .a_header {
+        font-size: 150%;
     }
   }
 
@@ -45,6 +84,27 @@
       .f_wrapper {
         height: 30%;
     }
+
+    .faq_header{
+        font-size: 250%;
+    }
+
+    .faq_header img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .faq_wrapper{
+        padding-top: 100px;
+        height: 40%;
+    }
+    .q_header {
+        font-size: 175%;
+    }
+    
+    .a_header {
+        font-size: 125%;
+    }
   }
 
   @media only screen and (max-width: 850px) {
@@ -63,7 +123,30 @@
       .f_wrapper {
         height: 30%;
     }
+
+
+    .faq_header{
+        font-size: 200%;
+    }
+
+    .faq_header img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .faq_wrapper{
+        padding-top: 25px;
+        height: 30%;
+    }
+    .q_header {
+        font-size: 150%;
+    }
+    
+    .a_header {
+        font-size: 100%;
+    }
   }
+  
 
   @media only screen and (max-width: 750px) {
     .k_header {
@@ -80,6 +163,26 @@
 
       .f_wrapper {
         height: 20%;
+    }
+
+    .faq_header{
+        font-size: 150%;
+    }
+
+    .faq_header img {
+        height: 30px;
+        width: 30px;
+    }
+    .faq_wrapper{
+        padding-top: 0px;
+        height: 20%;
+    }
+    .q_header {
+        font-size: 125%;
+    }
+    
+    .a_header {
+        font-size: 75%;
     }
   }
 
@@ -99,6 +202,25 @@
       .f_wrapper {
         height: 15%;
     }
+    .faq_header{
+        font-size: 150%;
+    }
+
+    .faq_header img {
+        display: none;
+    }
+
+    .faq_wrapper{
+        padding-top: 20px;
+        height: 20%;
+    }
+    .q_header {
+        font-size: 100%;
+    }
+    
+    .a_header {
+        font-size: 50%;
+    }
   }
 
 
@@ -117,5 +239,17 @@
 
       .f_wrapper {
         height: 12%;
+    }
+
+    .faq_wrapper{
+        padding-top: 25px;
+        height: 20%;
+    }
+    .q_header {
+        font-size: 75%;
+    }
+    
+    .a_header {
+        font-size: 25%;
     }
   }
