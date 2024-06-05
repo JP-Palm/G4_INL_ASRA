@@ -72,18 +72,18 @@ img {
 }
     
 #features {
-    height: 3100px;
-    padding-top: 325px;
+    height: 2400px;
+    padding-top: 250px;
 }
 
 #faq {
-    height: 3000px;
-    padding-top: 25px;
+    height: 2400px;
+    padding-top: 50px;
 }
 
 .f_wrapper {
     /* margin-top: 400px; */
-    height: 20%;
+    height: 25%;
     background: url("purr.jpg");
     background-size: cover;
     background-position: center;
@@ -115,15 +115,14 @@ img {
 }
 
 .faq_wrapper{
-    height: 25%;
+    height: 30%;
     margin-top: 75px;
     background: url("dognie.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     padding-top: 100px;
-    /* box-shadow: 10px 5px 20px 20px rgb(0, 0, 0); */
+    box-shadow: inset 0 0 1000px rgba(0,0,0,0.5);
 }
 
 .faq_header{
@@ -133,8 +132,7 @@ img {
     font-family: "Noto Serif", serif;
     font-style: italic;
     background-color:#343a40;
-    margin-top: 150px;
-    padding: 25px;
+    padding: 10px;
 }
 
 .q_header {
