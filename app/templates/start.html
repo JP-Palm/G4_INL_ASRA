@@ -10,7 +10,7 @@
                     <div class="col-4 text-center ">
                         <label for="photo">
                             <i class='bx bx-upload icon-upload'></i>
-                            {{ form.photo(id='photo', style="display: none;") }}
+                            {{ form.photo(id='photo') }}
                         </label>
                     </div>
                 </div>
@@ -30,40 +30,45 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const uploadIcon = document.querySelector('.icon-upload');
-        const fileInput = document.getElementById('photo');
-        const form = document.getElementById('uploadForm');
-        const classificationResult = document.getElementById('classificationResult');
-        const uploadedImage = document.getElementById('uploadedImage');
+    const uploadIcon = document.querySelector('.icon-upload');
+    const fileInput = document.getElementById('photo');
+    const form = document.getElementById('uploadForm');
+    const classificationResult = document.getElementById('classificationResult');
+    const uploadedImage = document.getElementById('uploadedImage');
 
-        uploadIcon.addEventListener('click', function() {
-            fileInput.click();
-        });
-
-        fileInput.addEventListener('change', async function(event) {
-            const file = fileInput.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    uploadedImage.src = e.target.result;
-                };
-                reader.readAsDataURL(file);
-
-                const formData = new FormData(form);
-
-                const response = await fetch("{{ url_for('api.classify_api') }}", {
-                    method: 'POST',
-                    body: formData
-                });
-
-                if (response.ok) {
-                    const result = await response.json();
-                    classificationResult.innerText = `Prediction: ${result.prediction}, Confidence: ${result.confidence}`;
-                } else {
-                    const error = await response.json();
-                    classificationResult.innerText = `Error: ${error.error}`;
-                }
-            }
-        });
+    uploadIcon.addEventListener('click', function() {
+        console.log('Upload icon clicked');
+        fileInput.click();
     });
+
+    fileInput.addEventListener('change', async function(event) {
+        console.log('File input changed');
+        const file = fileInput.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                console.log('File read successfully');
+                uploadedImage.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+
+            const formData = new FormData(form);
+
+            const response = await fetch("{{ url_for('api.classify_api') }}", {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                classificationResult.innerText = `Prediction: ${result.prediction}, Confidence: ${result.confidence}`;
+                console.log('Classification result received:', result);
+            } else {
+                const error = await response.json();
+                classificationResult.innerText = `Error: ${error.error}`;
+                console.log('Error received:', error);
+            }
+        }
+    });
+});
 </script>
