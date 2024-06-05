@@ -2,7 +2,6 @@ body{
     background: url("background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 
 .main-header {
@@ -81,13 +80,14 @@ img {
 }
 
 .f_wrapper {
-    height: 55%;
+    height: 45%;
     margin-top: 225px;
     background: url("purr.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
+
 }
 
 
@@ -97,7 +97,7 @@ img {
     display: block;
     float: left;
     margin-left: 150px;
-    margin-top: 250px;
+    margin-top: 200px;
     list-style: none;
 }
 
@@ -107,7 +107,7 @@ img {
     margin-right: 100px;
     color: rgb(255, 215, 0);
     font-size: 850%;
-    margin-top: 150px;
+    margin-top: 100px;
     font-family: "Noto Serif", serif;
     font-style: italic;
 }
@@ -121,7 +121,7 @@ img {
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     padding: 65px;
-
+    /* box-shadow: 10px 5px 20px 20px rgb(0, 0, 0); */
 }
 
 .faq_header{
@@ -132,8 +132,8 @@ img {
     font-style: italic;
     background-color:#343a40;
     margin-top: 150px;
-
     padding: 25px;
+    /* box-shadow: 10px 5px 20px 20px rgb(48, 46, 46); */
 }
 
 .q_header {
@@ -147,7 +147,6 @@ img {
     text-align: center;
     color: rgb(5 250 227);
     font-size: 200%;
-
 }
 
 .faq_header img {
