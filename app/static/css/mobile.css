@@ -41,7 +41,7 @@
       }
 
       .f_wrapper {
-        height: 20%;
+        height: 40%;
     }
 
     .faq_header{
@@ -55,7 +55,7 @@
 
     .faq_wrapper{
         padding-top: 50px;
-        height: 20%;
+        height: 40%;
     }
     
     .q_header {
@@ -83,7 +83,7 @@
       }
 
       .f_wrapper {
-        height:15%;
+        height:30%;
     }
 
     .faq_header{
@@ -97,7 +97,7 @@
 
     .faq_wrapper{
         padding-top: 50px;
-        height: 20%;
+        height: 40%;
     }
     .q_header {
         font-size: 175%;
@@ -122,7 +122,7 @@
       }
 
       .f_wrapper {
-        height: 15%;
+        height: 30%;
     }
 
 
@@ -137,7 +137,7 @@
 
     .faq_wrapper{
         padding-top: 35px;
-        height: 15%;
+        height: 30%;
     }
     .q_header {
         font-size: 150%;
@@ -163,7 +163,7 @@
       }
 
       .f_wrapper {
-        height: 10%;
+        height: 20%;
     }
 
     .faq_header{
@@ -176,7 +176,7 @@
     }
     .faq_wrapper{
         padding-top: 35px;
-        height: 15%;
+        height: 25%;
     }
     .q_header {
         font-size: 125%;
@@ -201,7 +201,7 @@
       }
 
       .f_wrapper {
-        height: 7%;
+        height: 15%;
     }
     .faq_header{
         font-size: 150%;
@@ -212,8 +212,8 @@
     }
 
     .faq_wrapper{
-        padding-top: 10px;
-        height: 10%;
+        padding-top: 35px;
+        height: 25%;
     }
     .q_header {
         font-size: 100%;
@@ -239,12 +239,12 @@
       }
 
       .f_wrapper {
-        height: 7%;
+        height: 15%;
     }
 
     .faq_wrapper{
-        padding-top: 20px;
-        height: 10%;
+        padding-top: 30px;
+        height: 20%;
     }
     .q_header {
         font-size: 75%;
