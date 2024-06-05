@@ -16,7 +16,7 @@
     }
 
     .faq_wrapper{
-        padding-top: 100px;
+        padding-top: 50px;
     }
     .q_header {
         font-size: 250%;
@@ -96,7 +96,7 @@
     }
 
     .faq_wrapper{
-        padding-top: 100px;
+        padding-top: 50px;
         height: 20%;
     }
     .q_header {
@@ -136,7 +136,7 @@
     }
 
     .faq_wrapper{
-        padding-top: 50px;
+        padding-top: 35px;
         height: 15%;
     }
     .q_header {
@@ -175,7 +175,7 @@
         width: 30px;
     }
     .faq_wrapper{
-        padding-top: 100px;
+        padding-top: 35px;
         height: 15%;
     }
     .q_header {
@@ -212,7 +212,7 @@
     }
 
     .faq_wrapper{
-        padding-top: 25px;
+        padding-top: 10px;
         height: 10%;
     }
     .q_header {
@@ -243,8 +243,8 @@
     }
 
     .faq_wrapper{
-        padding-top: 5px;
-        height: 7%;
+        padding-top: 20px;
+        height: 10%;
     }
     .q_header {
         font-size: 75%;
