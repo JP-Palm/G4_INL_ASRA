@@ -212,7 +212,7 @@
     }
 
     .faq_wrapper{
-        padding-top: 20px;
+        padding-top: 10px;
         height: 20%;
     }
     .q_header {
@@ -251,6 +251,6 @@
     }
     
     .a_header {
-        font-size: 25%;
+        font-size: 50%;
     }
   }
