@@ -63,12 +63,13 @@ img {
 }
 
 .icon-upload {
+    color: rgb(255, 215, 0);
     font-size: 200px;
     cursor: pointer;
 }
 
 .icon-upload:hover {
-    color:#007BFF;
+    color: rgb(5, 250, 227);
 }
 
 #features {
@@ -91,7 +92,7 @@ img {
 
 
 .feature_list {
-    color: rgb(5 250 227);
+    color: rgb(5, 250, 227);
     font-size: 300%;
     display: block;
     float: left;
