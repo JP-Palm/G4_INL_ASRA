@@ -1,0 +1,121 @@
+@media only screen and (max-width: 2000px) {
+    .k_header {
+      margin-right: 20px;
+    }
+
+    .feature_list{
+        margin-left: 20px;
+    }
+
+
+  }
+
+
+  @media only screen and (max-width: 1700px) {
+    .k_header {
+        font-size: 500%;
+        margin-top: 50px;
+      }
+  
+      .feature_list{
+          font-size: 200%;
+          margin-top: 175px;
+      }
+
+      .f_wrapper {
+        height: 30%;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 1100px) {
+    .k_header {
+        font-size: 400%;
+        margin-top: 50px;
+        margin-right: 20px;
+      }
+  
+      .feature_list{
+          font-size: 150%;
+          margin-top: 175px;
+          margin-left: 0px;
+      }
+
+      .f_wrapper {
+        height: 30%;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    .k_header {
+        font-size: 350%;
+        margin-top: 50px;
+        margin-right: 20px;
+      }
+  
+      .feature_list{
+          font-size: 125%;
+          margin-top: 175px;
+          margin-left: 0px;
+      }
+
+      .f_wrapper {
+        height: 30%;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .k_header {
+        font-size: 300%;
+        margin-top: 25px;
+        margin-right: 20px;
+      }
+  
+      .feature_list{
+          font-size: 100%;
+          margin-top: 120px;
+          margin-left: 0px;
+      }
+
+      .f_wrapper {
+        height: 20%;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .k_header {
+        font-size: 250%;
+        margin-top: 20px;
+        margin-right: 20px;
+      }
+  
+      .feature_list{
+          font-size: 75%;
+          margin-top: 80px;
+          margin-left: 0px;
+      }
+
+      .f_wrapper {
+        height: 15%;
+    }
+  }
+
+
+  @media only screen and (max-width: 500px) {
+    .k_header {
+        font-size: 200%;
+        margin-top: 20px;
+        margin-right: 20px;
+      }
+  
+      .feature_list{
+          font-size: 50%;
+          margin-top: 80px;
+          margin-left: 0px;
+      }
+
+      .f_wrapper {
+        height: 12%;
+    }
+  }
