@@ -121,7 +121,7 @@ img {
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     padding: 65px;
-    box-shadow: 10px 5px 20px 20px rgb(0, 0, 0);
+    /* box-shadow: 10px 5px 20px 20px rgb(0, 0, 0); */
 }
 
 .faq_header{
