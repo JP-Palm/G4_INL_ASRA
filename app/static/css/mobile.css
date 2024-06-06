@@ -156,13 +156,13 @@
         margin-right: 20px;
       }
   
-      .feature_list{
+    .feature_list{
           font-size: 100%;
           margin-top: 120px;
           margin-left: 0px;
       }
 
-      .f_wrapper {
+    .f_wrapper {
         height: 20%;
     }
 
@@ -185,12 +185,22 @@
     .a_header {
         font-size: 75%;
     }
+
+    #uploadedImage {
+        height: auto;
+        max-width: 200px;
+    }
+
   }
 
   @media only screen and (max-width: 650px) {
 
     #features {
         height: 600px;
+    }
+
+    .f_wrapper {
+        height: 15%;
     }
 
     #faq{
@@ -209,7 +219,7 @@
     }
 
     .f_wrapper {
-        height: 50%;
+        height: 35%;
     }
     .faq_header{
         font-size: 150%;
@@ -220,7 +230,7 @@
     }
 
     .faq_wrapper{
-        padding-top: 35px;
+        padding-top: 50px;
         height: 55%;
     }
 
@@ -259,6 +269,14 @@
         padding-top: 70px;
         height: 55%;
     }
+
+    #photo {
+        height: 50px;
+        width: 50px;
+    }
+    .f_wrapper {
+        height: 25%;
+    }
   }
 
 
@@ -287,5 +305,65 @@
     .faq_wrapper{
         padding-top: 80px;
         height: 55%;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .k_header {
+        font-size: 150%;
+        margin-top: 20px;
+        margin-right: 10px;
+      }
+
+    .feature_list{
+        font-size: 35%;
+        margin-top: 80px;
+        margin-left: 0px;
+      }
+  
+
+    .q_header {
+        font-size: 35%;
+    }
+    
+    .a_header {
+        font-size: 20%;
+    }
+
+    .faq_wrapper{
+        padding-top: 80px;
+        height: 55%;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .k_header {
+        font-size: 150%;
+        margin-top: 20px;
+        margin-right: 10px;
+      }
+
+    .feature_list{
+        font-size: 35%;
+        margin-top: 80px;
+        margin-left: 0px;
+      }
+  
+
+    .q_header {
+        font-size: 35%;
+    }
+    
+    .a_header {
+        font-size: 20%;
+    }
+
+    .faq_wrapper{
+        padding-top: 80px;
+        height: 55%;
+    }
+
+    .q_list {
+        margin-top: 15px;
     }
   }

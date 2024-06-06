@@ -73,17 +73,17 @@ img {
 }
     
 #features {
-    height: 1400px;
-    padding-top: 250px;
+    height: 1300px;
+    padding-top: 100px;
 }
 
 #faq {
     height: 1300px;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 .f_wrapper {
-    /* margin-top: 400px; */
+    margin-top: 150px; 
     height: 45%;
     background: url("purr.jpg");
     background-size: cover;
@@ -170,3 +170,8 @@ img {
     background-image: url('cloud_dark.png'); 
 }
 
+
+#uploadedImage {
+    height: auto;
+    max-width: 400px;
+}
