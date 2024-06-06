@@ -1,10 +1,8 @@
-html{
-    width: 100%;
-}
+
 
 body{
     background: url("background.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 
@@ -66,13 +64,12 @@ img {
 }
 
 .icon-upload {
-    color: rgb(255, 215, 0);
-    font-size: 200px;
-    cursor: pointer;
+    display: none;
 }
 
 .icon-upload:hover {
     color: rgb(5, 250, 227);
+    cursor: pointer;
 }
     
 #features {
@@ -153,5 +150,23 @@ img {
 
 .faq_header img {
     height: 100px;
+}
+
+#photo {
+    background-image: url('cloud_light.png'); 
+    background-size: cover;  
+    border: none;  
+    width: 100px;  
+    height: 100px;  
+    cursor: pointer;  
+    padding: 0;  
+    outline: none;  
+    text-indent: -9999px;  
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#photo:hover{
+    background-image: url('cloud_dark.png'); 
 }
 

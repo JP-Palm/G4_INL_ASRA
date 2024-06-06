@@ -96,11 +96,11 @@
     }
 
     .faq_wrapper{
-        padding-top: 50px;
+        padding-top: 75px;
         height: 40%;
     }
     .q_header {
-        font-size: 175%;
+        font-size: 150%;
     }
     
     .a_header {
@@ -188,20 +188,28 @@
   }
 
   @media only screen and (max-width: 650px) {
+
+    #features {
+        height: 600px;
+    }
+
+    #faq{
+        height: 600px;
+    }
     .k_header {
         font-size: 250%;
         margin-top: 20px;
         margin-right: 20px;
       }
   
-      .feature_list{
-          font-size: 75%;
-          margin-top: 80px;
-          margin-left: 0px;
-      }
+    .feature_list{
+        font-size: 75%;
+        margin-top: 80px;
+        margin-left: 0px;
+    }
 
-      .f_wrapper {
-        height: 15%;
+    .f_wrapper {
+        height: 50%;
     }
     .faq_header{
         font-size: 150%;
@@ -213,8 +221,9 @@
 
     .faq_wrapper{
         padding-top: 35px;
-        height: 25%;
+        height: 55%;
     }
+
     .q_header {
         font-size: 100%;
     }
@@ -232,25 +241,51 @@
         margin-right: 20px;
       }
   
-      .feature_list{
-          font-size: 50%;
-          margin-top: 80px;
-          margin-left: 0px;
+    .feature_list{
+        font-size: 50%;
+        margin-top: 80px;
+        margin-left: 0px;
       }
 
-      .f_wrapper {
-        height: 15%;
-    }
-
-    .faq_wrapper{
-        padding-top: 30px;
-        height: 20%;
-    }
     .q_header {
-        font-size: 75%;
+        font-size: 50%;
     }
     
     .a_header {
-        font-size: 50%;
+        font-size: 35%;
+    }
+
+    .faq_wrapper{
+        padding-top: 70px;
+        height: 55%;
+    }
+  }
+
+
+  @media only screen and (max-width: 400px) {
+    .k_header {
+        font-size: 150%;
+        margin-top: 20px;
+        margin-right: 10px;
+      }
+
+    .feature_list{
+        font-size: 35%;
+        margin-top: 80px;
+        margin-left: 0px;
+      }
+  
+
+    .q_header {
+        font-size: 40%;
+    }
+    
+    .a_header {
+        font-size: 25%;
+    }
+
+    .faq_wrapper{
+        padding-top: 80px;
+        height: 55%;
     }
   }
