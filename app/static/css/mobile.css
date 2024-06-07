@@ -275,7 +275,7 @@
         width: 50px;
     }
     .f_wrapper {
-        height: 25%;
+        height: 35%;
     }
   }
 
@@ -305,6 +305,10 @@
     .faq_wrapper{
         padding-top: 80px;
         height: 55%;
+    }
+
+    .f_wrapper {
+        height: 25%;
     }
   }
 
