@@ -27,7 +27,7 @@
   <title>ASRA - Animal Recognition Assistant</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark", style="max-width: 2500px; margin: auto;">
     <a class="navbar-brand" href="{{url_for('main.index')}}">ASRA</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -40,13 +40,15 @@
       </div>
     </div>
   </nav>
-  <div>
-    <!-- Main content will be inserted here -->
-    {% block content %}
-    {% endblock %}
+  <div class="x_container">
+    <div>
+      <!-- Main content will be inserted here -->
+      {% block content %}
+      {% endblock %}
+    </div>
   </div>
   <!-- Footer -->
-  <footer class="bg-dark text-white py-4">
+  <footer class="bg-dark text-white py-4", style="max-width: 2500px; margin: auto;">
     <div class="container text-center">
       <small>ASRA &copy; 2024</small>
     </div>

@@ -1,3 +1,9 @@
+    @media only screen and (min-width: 3000px) {
+        #start{
+            height: 30vh;
+        }
+    }
+
 @media only screen and (max-width: 2000px) {
     .k_header {
       margin-right: 20px;
@@ -106,23 +112,30 @@
     .a_header {
         font-size: 125%;
     }
+    #uploadedImage {
+        display: none;
+    }
   }
 
   @media only screen and (max-width: 850px) {
+
+    #features {
+        height: 900px;
+    }
     .k_header {
         font-size: 350%;
         margin-top: 50px;
         margin-right: 20px;
       }
   
-      .feature_list{
+    .feature_list{
           font-size: 125%;
           margin-top: 175px;
           margin-left: 0px;
       }
 
-      .f_wrapper {
-        height: 30%;
+    .f_wrapper {
+        height: 40%;
     }
 
 
@@ -146,6 +159,12 @@
     .a_header {
         font-size: 100%;
     }
+
+    #start {
+        height: 50vh;
+
+    }
+
   }
   
 
@@ -163,7 +182,7 @@
       }
 
     .f_wrapper {
-        height: 20%;
+        height: 30%;
     }
 
     .faq_header{
@@ -184,11 +203,6 @@
     
     .a_header {
         font-size: 75%;
-    }
-
-    #uploadedImage {
-        height: auto;
-        max-width: 200px;
     }
 
   }
@@ -231,6 +245,7 @@
 
     .faq_wrapper{
         padding-top: 50px;
+        margin-top: 0px;
         height: 55%;
     }
 
@@ -240,6 +255,10 @@
     
     .a_header {
         font-size: 50%;
+    }
+
+    .main-header h1 {
+        font-size: 2rem;
     }
   }
 
@@ -277,6 +296,7 @@
     .f_wrapper {
         height: 35%;
     }
+
   }
 
 
@@ -347,6 +367,7 @@
         margin-right: 10px;
       }
 
+
     .feature_list{
         font-size: 35%;
         margin-top: 80px;
@@ -369,5 +390,9 @@
 
     .q_list {
         margin-top: 15px;
+    }
+
+    .faq_header{
+        font-size: 100%;
     }
   }
