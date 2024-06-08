@@ -2,6 +2,10 @@
         #start{
             height: 30vh;
         }
+
+        .main-header {
+            height: 50vh;
+        }
     }
 
 @media only screen and (max-width: 2000px) {
