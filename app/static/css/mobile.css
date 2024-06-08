@@ -1,6 +1,6 @@
     @media only screen and (min-width: 3000px) {
         #start{
-            height: 20vh;
+            height: 30vh;
         }
     }
 
@@ -112,6 +112,9 @@
     .a_header {
         font-size: 125%;
     }
+    #uploadedImage {
+        display: none;
+    }
   }
 
   @media only screen and (max-width: 850px) {
@@ -161,6 +164,7 @@
         height: 50vh;
 
     }
+
   }
   
 
@@ -199,11 +203,6 @@
     
     .a_header {
         font-size: 75%;
-    }
-
-    #uploadedImage {
-        height: auto;
-        max-width: 200px;
     }
 
   }
@@ -297,6 +296,7 @@
     .f_wrapper {
         height: 35%;
     }
+
   }
 
 
